@@ -1,14 +1,17 @@
-/* 
- *Testing Plug.DJ API functions!
- *Author Samuel.M(tumpuu)
-*/
+API.addEventListener(API.DJ_ADVANCE, GetDJ);
 
-function getusers()
+function GetDJ(obj)
 {
-return API.getUsers();	
+if (obj == null) return; // no dj
+var str = "";
+var currentDJ = obj.dj;
+str += currentDJ.username;
+var total = currentDJ.djPoints + currentDJ.listenerPoints + currentDJ.curatorPoints;
+str += " points: " + total;
+str += ", fans: " + currentDJ.fans;
+str += " || " + obj.media.author + " - " + obj.media.title;
+alert(str);
 }
 
-function getWaitList()
-{
-return API.WaitList()	
-}
+
+
