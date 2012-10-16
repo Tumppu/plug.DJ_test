@@ -3,4 +3,12 @@
  *Author Samuel.M(tumpuu)
 */
 
-alert("hello world");
+function getusers()
+{
+return API.getUsers();	
+}
+
+function getWaitList()
+{
+return API.WaitList()	
+}
