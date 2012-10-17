@@ -1,17 +1,52 @@
-API.addEventListener(API.DJ_ADVANCE, GetDJ);
+/*
+ *plugdj bot 
+ * author: Samuel.M
+ */
 
-function GetDJ(obj)
+var woot = true;
+
+
+function InitApiListerner()
 {
-if (obj == null) return; // no dj
-var str = "";
-var currentDJ = obj.dj;
-str += currentDJ.username;
-var total = currentDJ.djPoints + currentDJ.listenerPoints + currentDJ.curatorPoints;
-str += " points: " + total;
-str += ", fans: " + currentDJ.fans;
-str += " || " + obj.media.author + " - " + obj.media.title;
-alert(str);
+	
+}
+
+function AutoWoot()
+{
+	
+	
+}
+
+function UserList()
+{
+
+var Users = API.GetUsers();
+
+var user;
+
+for (user in users)
+{
+
 }
 
 
 
+} 
+
+
+{
+
+}
+
+API.GetUsers()	
+}
+
+function Ui()
+{
+	
+
+}
+
+
+UserList()
+//InitApiListerner()
